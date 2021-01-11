@@ -10,7 +10,8 @@ body {
 
  nav{
     float: left;
-
+    padding-bottom: 20px;
+    padding-top: 20px;
     width: 100%;
     border-bottom: 1px solid #eee;
     margin-bottom: 20px;
@@ -121,3 +122,24 @@ float: left;
   .section{
     display: inline-block;
   }
+
+
+  table, td {
+    border: 1px solid black;
+    
+  }
+  table
+  {
+    width: 100% ;
+    border-collapse: collapse;
+  }
+  td {
+    width: 5% ;
+  }
+
+th{
+  padding-left: 48px;
+}
+tr{
+  width:95%
+}
