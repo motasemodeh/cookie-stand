@@ -68,7 +68,9 @@ var limaStore = new cookiesStores('Lima', 2, 16, 4.6);
 
 
 var parentSec = document.getElementById('cookiesStores');
+
 var locationSection = document.createElement('section');
+
 parentSec.appendChild(locationSection);
 var locationTable = document.createElement('table');
 locationSection.appendChild(locationTable);
