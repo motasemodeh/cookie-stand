@@ -130,16 +130,6 @@ float: left;
   }
   table
   {
-    width: 100% ;
+ 
     border-collapse: collapse;
   }
-  td {
-    width: 5% ;
-  }
-
-th{
-  padding-left: 48px;
-}
-tr{
-  width:95%
-}
