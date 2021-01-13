@@ -40,6 +40,16 @@ cookiesStores.prototype.getAvgCookiesPerHour = function () {
     }
 }
 
+
+// prototype function to get average cookies per hour
+function getAvgCookiesPerHours() {
+    for (var i = 0; i < workingHours.length; i++) {
+        this.avgCookiesPerHour.push(Math.ceil(avgCusPerHour[i] * avgCookiePerCustomer));
+        totalCookies = totalCookies + avgCookiesPerHour[i];
+        grandTotal += avgCookiesPerHour[i];
+    }
+}
+
 // prototype function to render table body
 cookiesStores.prototype.render = function () {
     var tableRow = document.createElement('tr');
@@ -151,23 +161,21 @@ function submitter(event)
 
     event.preventDefault();
 
-    var locationName = event.target.storeName.value
+    var locationName = event.target.storeName.value;
     console.log(locationName);
-    var minimumPerHour = event.target.minimumPerHour.value
+    var minimumPerHour = parseInt(event.target.minimumPerHour.value);
     console.log(minimumPerHour);
-    var maximumPerHour = event.target.maximumPerHour.value
+    var maximumPerHour = parseInt(event.target.maximumPerHour.value);
     console.log(maximumPerHour);
-    var average = event.target.average.value
+    var average = parseInt(event.target.average.value);
     console.log(average);
     console.log('Hi there', average);
 
     console.log(event)
-    var newLocation = new cookiesStores(locationName , minimumPerHour,maximumPerHour, average);
+    var newLocation = new cookiesStores(locationName, minimumPerHour,maximumPerHour, average);
 
     newLocation.getCusPerHour();
     newLocation.getAvgCookiesPerHour();
     newLocation.render();
     tableFooter();
 }
-
-

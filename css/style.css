@@ -276,3 +276,13 @@ footer{
     background-color: #a31621;
     bottom: 0;
 }
+#form1
+{
+  background-color: #a31621;
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+
+
+
